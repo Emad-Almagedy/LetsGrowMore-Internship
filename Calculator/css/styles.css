@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+html {
+    min-height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(45deg,#633333,#3a4452); */
+    background: -webkit-gradient(linear, left top, left bottom, from(#633333), to(#3a4452)) fixed;
+
+    background-attachment: fixed;
+
+}
+
+.calculator {
+    border: 1px solid #605050;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 16px rgb(237, 213, 213,0.5)
+}
+
+#input-field {
+    width: 330px;
+    border: none;
+    padding: 30px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 16px rgb(59, 59, 59,0.2) ;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: white;
+}
+
+#input-field::placeholder {
+    color: white;
+}
+
+button {
+    width: 65px;
+    border: none;
+    height: 65px;
+    margin: 10px;
+    border-radius: 40%;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgb(195, 85, 85,0.1); 
+    cursor: pointer;
+}
+
+.equal-btn {
+    background-color: rgb(232, 127, 127);
+}
+
+.operator {
+    color: rgb(226, 118, 118);
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        width: 500px;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    #input-field {
+        width: 250px;
+        border: none;
+        padding: 30px;
+        margin: 10px;
+        background: transparent;
+        box-shadow: 0px 3px 16px rgb(59, 59, 59,0.2) ;
+        font-size: 40px;
+        text-align: right;
+        cursor: pointer;
+        color: white;
+    }
+
+    
+    button {
+        width: 50px;
+        border: none;
+        height: 50px;
+        margin: 5px;
+        border-radius: 40%;
+        background: transparent;
+        color: white;
+        font-size: 20px;
+        box-shadow: -8px -8px 15px rgb(195, 85, 85,0.1); 
+        cursor: pointer;
+    }
+
+
+}
+
